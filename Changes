@@ -1,0 +1,6 @@
+Revision history for Perl extension Geo::TigerLine::Abbreviations.
+
+0.01  Tue Nov 18 23:29:30 2003
+	- original version; created by h2xs 1.6 with options
+		-n Geo::TigerLine::Abbreviations -X
+

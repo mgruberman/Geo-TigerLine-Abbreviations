@@ -1,0 +1,29 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.28.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It would check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 548bd19b6cb198dad1263bfe009b5e35891538e8 Changes
+SHA1 9e543b86ebc60cbbfaca103746024d8ed5a1f744 MANIFEST
+SHA1 aa5a9668379cd41c6aac6dafd7ef07165daa8ac2 Makefile.PL
+SHA1 94245572f5476e2f6b381cfdb7c5b496ccec7dd9 README
+SHA1 0916b87d3cb95e914f1dcf6d7d2f885eb15d9704 lib/Geo/TigerLine/Abbreviations.pm
+SHA1 34df66d2910972f6cb284e3696156a300616fabb t/1.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.2.2 (OpenBSD)
+
+iD8DBQE/uwJfejb/5debeXcRAjTqAJ9q0ohm0IMl3rRvWBXWUeGwkDoWEwCfZyV8
+iINMwJ4qZfA9RZ4PvUVzNqU=
+=dkdp
+-----END PGP SIGNATURE-----
