@@ -5,13 +5,22 @@ use Cache::FileCache;
 use LWP::Simple;
 use vars qw($VERSION %Dict);
 
-$VERSION = '0.01';
+$VERSION = '0.02';
 init();
 
 sub init {
     for my $abbr ( @{_get_dictionary()} ) {
-	push @{$Dict{$abbr->{$_}}}, $_ for keys %$abbr;
+	push @{$Dict{$abbr->{$_}}}, $abbr for keys %$abbr;
     }
+    for ( keys %Dict ) {
+	@{$Dict{$_}} = unique( @{$Dict{$_}} );
+    }
+}
+
+sub unique {
+    my %seen;
+    $seen{$_} = $_ for @_;
+    return values %seen;
 }
 
 sub _get_dictionary {

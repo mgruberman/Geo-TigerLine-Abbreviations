@@ -4,3 +4,5 @@ Revision history for Perl extension Geo::TigerLine::Abbreviations.
 	- original version; created by h2xs 1.6 with options
 		-n Geo::TigerLine::Abbreviations -X
 
+0.02  Tue Nov 18 24:00:00 2003
+        - The %Dict data was formatted incorrectly. Fix that.
