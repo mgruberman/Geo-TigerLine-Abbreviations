@@ -3,9 +3,8 @@ use strict;
 use warnings;
 use Cache::FileCache;
 use LWP::Simple;
-use vars qw($VERSION %Dict);
+use vars qw(%Dict);
 
-$VERSION = '0.02';
 init();
 
 sub init {
